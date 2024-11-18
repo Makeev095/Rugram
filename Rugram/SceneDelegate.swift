@@ -21,10 +21,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             initialViewController = LoginViewController()
         }
         
-        let navigationController = UINavigationController(rootViewController: initialViewController)
-        window?.rootViewController = navigationController
+        let tabBarController = UITabBarController()
+        
+        let newsFeedVC = NewsFeedViewController()
+        let searchVC = SearchViewController()
+        let createPostVC = CreatePostViewController()
+        let videoFeedVC = VideoFeedViewController()
+        let profileVC = ProfileViewController()
+        
+        // Настройка вкладок
+        newsFeedVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), tag: 0)
+        searchVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "magnifyingglass"), tag: 1)
+        createPostVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "plus.app"), tag: 2) // Кнопка добавления
+        videoFeedVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "play.rectangle"), tag: 3)
+        profileVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "person"), tag: 4)
+
+        // Добавление контроллеров в таб бар
+        tabBarController.viewControllers = [newsFeedVC, searchVC, createPostVC, videoFeedVC, profileVC]
+        
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        
+        
+    }
+
+    
+//        let navigationController = UINavigationController(rootViewController: initialViewController)
+//        window?.rootViewController = navigationController
+//        window?.makeKeyAndVisible()
     }
     
     // Другие методы SceneDelegate...
-}
+

@@ -11,6 +11,7 @@
 		A7EDED272CEB6540003A793B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A7EDED262CEB6540003A793B /* FirebaseDatabase */; };
 		A7EDED292CEB6540003A793B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A7EDED282CEB6540003A793B /* FirebaseFirestore */; };
 		A7EDED2C2CEB657E003A793B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A7EDED2B2CEB657E003A793B /* FirebaseCore */; };
+		A7EDED392CEB8976003A793B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A7EDED382CEB8976003A793B /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 				A7EDED272CEB6540003A793B /* FirebaseDatabase in Frameworks */,
 				A7EDED252CEB6540003A793B /* FirebaseAuth in Frameworks */,
 				A7EDED2C2CEB657E003A793B /* FirebaseCore in Frameworks */,
+				A7EDED392CEB8976003A793B /* FirebaseStorage in Frameworks */,
 				A7EDED292CEB6540003A793B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +103,7 @@
 				A7EDED262CEB6540003A793B /* FirebaseDatabase */,
 				A7EDED282CEB6540003A793B /* FirebaseFirestore */,
 				A7EDED2B2CEB657E003A793B /* FirebaseCore */,
+				A7EDED382CEB8976003A793B /* FirebaseStorage */,
 			);
 			productName = Rugram;
 			productReference = A7EDED062CEB638F003A793B /* Rugram.app */;
@@ -395,6 +398,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A7EDED232CEB6540003A793B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
+		};
+		A7EDED382CEB8976003A793B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7EDED232CEB6540003A793B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
